@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Custom View Tutorial</string>
+    
+    <!-- activity_main -->
+    <string name="login">Login</string>
+    <string name="login_loading_state">Please wait…</string>
 </resources>

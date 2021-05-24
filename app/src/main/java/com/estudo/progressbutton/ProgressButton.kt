@@ -71,6 +71,14 @@ class ProgressButton @JvmOverloads constructor(
         }
     }
 
+    fun setLoading() {
+        state = ProgressButtonState.Loading
+    }
+
+    fun setNormal() {
+        state = ProgressButtonState.Normal
+    }
+
     sealed class ProgressButtonState(val isEnabled: Boolean, val progressVisibility: Int) {
         object Normal: ProgressButtonState(true, View.GONE)
         object Loading: ProgressButtonState(false, View.VISIBLE)
